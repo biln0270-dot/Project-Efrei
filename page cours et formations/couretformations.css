@@ -24,6 +24,50 @@ body {
   margin-right: 20px;
 }
 
+nav a{
+  text-decoration: none;
+  font-size: 15px;
+  justify-content: center;
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    border-radius: 5px;
+
+}
+nav a:hover{
+  letter-spacing: 4px;
+}
+
+nav a:first-child:hover{
+    background-color: #1e88e5;
+    color: black;
+    border-radius: 5px;
+ }
+
+ nav a:nth-child(2):hover{
+    background-color: #1e88e5;
+    color: black;
+        border-radius: 5px;
+
+ }
+
+ nav a:nth-child(3):hover{
+    background-color: #1e88e5;
+    color: black;
+        border-radius: 5px;
+
+ }
+
+ h2{
+  color: #1e88e5;
+  
+ }
 .banner img {
   width: 100%;
   height: 300px;

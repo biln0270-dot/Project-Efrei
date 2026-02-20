@@ -40,7 +40,7 @@ nav a{
     transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     letter-spacing: 2px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(240, 235, 235);
+    background-color: rgb(226, 224, 224);
     color: black;
     border-radius: 5px;
 
@@ -67,6 +67,10 @@ nav a:first-of-type:hover{
     color: white;
         border-radius: 5px;
 
+ }
+
+ img{
+  width: 200px;
  }
 
 
