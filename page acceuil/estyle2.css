@@ -8,16 +8,70 @@ body {
 
 header {
   background-image: url("/images/campus.png");
-      background-size: cover;      /* prend toute la largeur */
+      background-size: cover;
       background-position: center; 
       background-repeat: no-repeat;
       height: 300px;      
   color: rgb(39, 46, 107);
   padding: 30px;
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+nav{
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: fit-content;
+  margin: 20px auto;
+
+}
+
+nav a{
+  text-decoration: none;
+  font-size: 15px;
+  justify-content: center;
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(240, 235, 235);
+    color: black;
+    border-radius: 5px;
+
+}
+nav a:hover{
+  letter-spacing: 4px;
+}
+
+nav a:first-of-type:hover{
+    background-color: #1e88e5;
+    color: white;
+    border-radius: 5px;
+ }
+
+ nav a:nth-of-type(2):hover{
+    background-color: #1e88e5;
+    color: white;
+        border-radius: 5px;
+
+ }
+
+ nav a:nth-of-type(3):hover{
+    background-color: #1e88e5;
+    color: white;
+        border-radius: 5px;
+
+ }
+
+
 .events {
+  margin-top: 70px;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -42,9 +96,16 @@ header {
   margin-bottom: 10px;
 }
 
+h1, h2{
+  color: #1e88e5;
+}
+
 .presentation {
-  background: white;
-  margin: 20px;
+  background-color: rgba(242, 236, 236, 0.85);
   padding: 30px;
   border-radius: 10px;
+  text-align: center;
+  width: fit-content;
+  margin: 20px auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
