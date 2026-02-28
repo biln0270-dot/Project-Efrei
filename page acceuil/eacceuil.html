@@ -6,21 +6,33 @@
   <link rel="stylesheet" href="estyle2.css">
 </head>
 <body>
-
-  
+<header class="hero-section">
     
-    <header class="navbar">
-      <img src="/images/efr logo.png" alt="EFREI Paris" class="logo">
-  <nav><h1>Inscrivez-vous à nos prochains événements</h1>
-    <p>Découvrez les journées portes ouvertes et immersions EFREI</p>
-    <a href="/page acceuil/eacceuil.html">Accueil</a>
-    <a href="/page cours et formations/coursetformations.html">Cours et formations</a>
-    <a href="/page nos enseignats/enseignant.html">Équipe enseignante</a>
-  </nav>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="/images/efr logo.png" alt="EFREI Paris" class="logo">
+      </div>
+      <div class="nav-links">
+        <a href="eacceuil.html">Accueil</a>
+        <a href="../page cours et formations/coursetformations.html">Cours et formations</a>
+        <a href="../page nos enseignats/enseignant.html">Équipe enseignante</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="subtitle">Département d'Informatique</p>
+      <h1>L'école d'ingénieurs pour<br>le monde de demain</h1>
+      
+      <div class="hero-actions">
+        <a href="../page cours et formations/coursetformations.html" class="btn btn-primary">Je trouve ma formation ➔</a>
+        <a href="#events" class="btn btn-secondary">Prochains événements ➔</a>
+      </div>
+    </div>
 
   </header>
 
-  <section class="events">
+  <section class="events" id="events">
+
     <div class="card">
       <h3>Journée portes ouvertes</h3>
       <p class="date">14 février 2026</p>
@@ -30,24 +42,117 @@
     <div class="card">
       <h3>Programmeur Day</h3>
       <p class="date">23 février 2026</p>
-      <p>Une journée dédiée à l’informatique.</p>
+      <p>Une journée dédiée à l'informatique.</p>
     </div>
 
     <div class="card">
-      <h3>Journée d’immersion</h3>
+      <h3>Journée d'immersion</h3>
       <p class="date">4 mars 2026</p>
       <p>Vivez une journée comme un étudiant EFREI.</p>
     </div>
   </section>
 
-  <section class="presentation">
-    <h2>Présentation du département d’informatique</h2>
+  <section class="presentation-section">
+    <div class="presentation-texte">
+    <h2>Présentation du département d'informatique</h2>
     <p>
-      Le département d’informatique de l’EFREI forme des ingénieurs du numérique
+      Le département d'informatique de l'EFREI forme des ingénieurs du numérique
       spécialisés en programmation, bases de données, réseaux, cybersécurité
       et intelligence artificielle.
     </p>
+    <p>
+        Grâce à une pédagogie axée sur la pratique et les projets, nous préparons 
+        nos étudiants à relever les défis technologiques de demain.
+      </p>
+      <a href="../page cours et formations/coursetformations.html" class="btn-lire-plus">Découvrir nos formations</a>
+    </div>
+    <div class="presentation-image">
+      <img src="../images/etudiants.png" alt="Étudiants EFREI sur le campus">
+    </div>
   </section>
 
+  <section class="formations-preview">
+    <h2>Nos Formations Phares</h2>
+    <p class="section-desc">Découvrez les piliers de notre enseignement en première année.</p>
+    
+    <div class="grid-formations">
+      <article class="formation-card">
+        <h3>Web 1 : Web dynamique</h3>
+        <p>Maîtrisez la conception de sites et d'applications de bout en bout avec HTML, CSS, JavaScript et PHP.</p>
+      </article>
+      
+      <article class="formation-card">
+        <h3>Virtualisation et Conteneurisation</h3>
+        <p>Plongez au cœur de l'infrastructure informatique : architecture réseau, administration sous Debian et introduction à la virtualisation (Docker).</p>
+      </article>
+
+      <article class="formation-card">
+        <h3>Structures des données avancées</h3>
+        <p>Construisez des fondations logiques solides en manipulant les structures de données complexes, comme les listes chaînées.</p>
+      </article>
+    </div>
+    
+    <div class="center-btn">
+      <a href="../page cours et formations/coursetformations.html" class="btn-primary-2">Voir le programme complet</a>
+    </div>
+  </section>
+
+  <section class="chiffres-cles">
+    <div class="chiffre-box">
+      <span class="nombre">98%</span>
+      <span class="label">Taux d'insertion</span>
+    </div>
+    <div class="chiffre-box">
+      <span class="nombre">50+</span>
+      <span class="label">Professeurs experts</span>
+    </div>
+    <div class="chiffre-box">
+      <span class="nombre">12</span>
+      <span class="label">Laboratoires équipés</span>
+    </div>
+    <div class="chiffre-box">
+      <span class="nombre">100%</span>
+      <span class="label">Pédagogie par projet</span>
+    </div>
+  </section>
+
+  <section class="projets-etudiants">
+    <h2>La Pédagogie par l'Action</h2>
+    <p class="section-desc">Nos étudiants appliquent leurs connaissances sur des projets concrets dès le premier semestre.</p>
+    
+    <div class="grid-projets">
+      <div class="projet-card">
+        <div class="projet-tag">Web Dev</div>
+        <h3>Création d'un Dashboard Étudiant</h3>
+        <p>Conception et développement complet d'une interface de gestion étudiante interactive en utilisant les technologies front-end classiques.</p>
+      </div>
+      
+      <div class="projet-card">
+        <div class="projet-tag">Communication tech</div>
+        <h3>Drones : La Tech expliquée aux enfants</h3>
+        <p>Exercice de vulgarisation scientifique visant à présenter le fonctionnement et les enjeux des drones à un public de 10 ans.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>EFREI - Département Informatique</h3>
+        <p>Projet de programmation Web.</p>
+      </div>
+      
+      <nav class="footer-nav">
+        <a href="eacceuil.html">Accueil</a>
+        <a href="../page cours et formations/coursetformations.html">Cours</a>
+        <a href="../page nos enseignats/enseignant.html">Équipe</a>
+        <a href="../page a propos/apropos.html">À propos de nous</a>
+      </nav>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Tous droits réservés.</p>
+    </div>
+  </footer>
 </body>
 </html>

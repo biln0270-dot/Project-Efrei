@@ -1,77 +1,104 @@
 body {
   font-family: Arial, sans-serif;
- background-color: #fcfcfc; 
- margin: 0;
-  
+  background-color: #fcfcfc; 
+  margin: 0;
   color: #333;
 }
 
-header {
-  background-image: url("/images/campus.png");
-      background-size: cover;
-      background-position: center; 
-      background-repeat: no-repeat;
-      height: 300px;      
-  color: rgb(39, 46, 107);
-  padding: 30px;
-  text-align: center;
+
+.hero-section {
+
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/campus.png");
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.logo {
+  width: 180px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white; 
+  margin-left: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #1e88e5; 
+}
+
+.hero-content {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  padding-left: 10%; 
+  color: white;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-nav{
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 30px;
-  border-radius: 10px;
-  text-align: center;
+.hero-content h1 {
+  color: white;
+  font-size: 4rem; 
+  margin-top: 0;
+  margin-bottom: 40px;
+  max-width: 800px; 
+  line-height: 1.1;
+}
+
+.hero-actions {
+  display: flex;
+  flex-direction: column; 
+  gap: 15px;
   width: fit-content;
-  margin: 20px auto;
-
 }
 
-nav a{
+.btn {
+  padding: 20px 30px;
+  border-radius: 10px;
   text-decoration: none;
-  font-size: 15px;
-  justify-content: center;
-    display: block;
-    padding: 10px;
-    margin: 10px;
-    display: inline-block;
-    text-transform: uppercase;
-    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-    letter-spacing: 2px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(226, 224, 224);
-    color: black;
-    border-radius: 5px;
-
-}
-nav a:hover{
-  letter-spacing: 4px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
 }
 
-nav a:first-of-type:hover{
-    background-color: #1e88e5;
-    color: white;
-    border-radius: 5px;
- }
+.btn:hover {
+  transform: translateX(10px); 
+}
 
- nav a:nth-of-type(2):hover{
-    background-color: #1e88e5;
-    color: white;
-        border-radius: 5px;
+.btn-primary {
+  background-color: #3c285a; 
+  color: white;
+}
 
- }
-
- nav a:nth-of-type(3):hover{
-    background-color: #1e88e5;
-    color: white;
-        border-radius: 5px;
-
- }
-
- img{
-  width: 200px;
- }
+.btn-secondary {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+}
 
 
 .events {
@@ -104,12 +131,196 @@ h1, h2{
   color: #1e88e5;
 }
 
-.presentation {
-  background-color: rgba(242, 236, 236, 0.85);
+.presentation-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  background-color: #ffffff;
+  gap: 50px;
+}
+
+.presentation-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  gap: 50px;
+}
+
+.presentation-texte {
+  flex: 1; 
+}
+
+.presentation-texte h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.presentation-texte p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.presentation-image {
+  flex: 1;
+}
+
+.presentation-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.btn-lire-plus {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #1e88e5;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-lire-plus:hover {
+  background-color: #1565c0;
+}
+
+.formations-preview, .projets-etudiants {
+  padding: 80px 10%;
+  background-color: #fcfcfc;
+  text-align: center;
+}
+
+.projets-etudiants {
+  background-color: #ffffff;
+}
+
+.formations-preview h2, .projets-etudiants h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.section-desc {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+}
+
+.grid-formations, .grid-projets {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.formation-card {
+  background: white;
   padding: 30px;
   border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border-top: 4px solid #1e88e5;
+  text-align: left;
+}
+
+.formation-card h3 {
+  color: #333;
+  margin-top: 0;
+}
+
+.center-btn {
+  margin-top: 50px;
+}
+
+.btn-primary-2{
+  color: blue;
+  background-color: white;
+}
+
+.projet-card {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: left;
+  border: 1px solid #eee;
+}
+
+.projet-tag {
+  display: inline-block;
+  background-color: #e3f2fd;
+  color: #1e88e5;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.chiffres-cles {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1e88e5;
+  color: white;
+  padding: 60px 10%;
+}
+
+.chiffre-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nombre {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Arial Black', sans-serif;
+}
+
+.label {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #272e6b; 
+  color: white;
+  padding: 50px 10% 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: white;
+}
+
+.footer-bottom {
   text-align: center;
-  width: fit-content;
-  margin: 20px auto;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #888;
+  font-size: 13px;
 }
