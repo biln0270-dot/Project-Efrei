@@ -5,6 +5,18 @@ body {
   color: #333;
 }
 
+.hero-section {
+
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/acceuil\ la\ maison.jpg");
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+}
+
 .navbar {
   background: #222;
   color: white;
@@ -64,6 +76,23 @@ nav a:first-child:hover{
 
  }
 
+ .hero-content {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  padding-left: 10%; 
+  color: white;
+  font-size: 30px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
  h2{
   color: #1e88e5;
   
@@ -73,21 +102,134 @@ nav a:first-child:hover{
   height: 300px;
   object-fit: cover;
 }
-
-.content {
-  padding: 40px;
+.banner-cours img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover; 
+  display: block;
 }
 
-.text-image {
+.dark-nav {
+  background-color: #222222; 
+}
+
+
+.intro-cours {
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
   align-items: center;
+  padding: 80px 10%;
+  background-color: #ffffff;
+  gap: 50px;
 }
 
-.text-image img {
-  width: 300px;
-  border-radius: 10px;
+.intro-texte {
+  flex: 6; 
 }
+
+.intro-texte h1 {
+  color: #1e88e5;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.intro-texte p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.intro-image {
+  flex: 4;
+}
+
+.intro-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.section-titre {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-titre h2 {
+  color: #0b2c6d;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.section-titre p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.formations-diplomes {
+  padding: 60px 10%;
+  background-color: #f4f6f9;
+}
+
+.formations-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.formation-bloc {
+  background: white;
+  border-left: 6px solid #1e88e5;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.3s ease;
+}
+
+.formation-bloc:hover {
+  transform: translateX(10px);
+}
+
+.formation-tag {
+  background-color: #1e88e5;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.formation-tag-ingenieur {
+  background-color: #f28c28;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.formation-contenu h3 {
+  color: #222;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.formation-contenu p {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
 
 .cards {
   display: flex;
@@ -109,18 +251,3 @@ nav a:first-child:hover{
   border-radius: 10px;
 }
 
-.stats {
-  display: flex;
-  justify-content: space-around;
-  padding: 40px;
-  text-align: center;
-}
-
-.stats h3 {
-  font-size: 32px;
-  color: #0b2c6d;
-}
-
-.orange {
-  color: #f28c28;
-}
