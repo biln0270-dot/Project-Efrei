@@ -18,64 +18,30 @@ body {
 }
 
 .navbar {
-  background: #222;
-  color: white;
   display: flex;
+  justify-content: space-between; 
   align-items: center;
-  padding: 10px 30px;
+  padding: 20px 50px;
 }
 
 .logo {
-  height: 40px;
-  margin-right: 30px;
+  width: 180px;
 }
 
-.navbar a {
-  color: white;
+.nav-links a {
   text-decoration: none;
-  margin-right: 20px;
+  color: white; 
+  margin-left: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
 }
 
-nav a{
-  text-decoration: none;
-  font-size: 15px;
-  justify-content: center;
-    display: block;
-    padding: 10px;
-    margin: 10px;
-    display: inline-block;
-    text-transform: uppercase;
-    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-    letter-spacing: 2px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-    border-radius: 5px;
-
+.nav-links a:hover {
+  color: #1e88e5; 
 }
-nav a:hover{
-  letter-spacing: 4px;
-}
-
-nav a:first-child:hover{
-    background-color: #1e88e5;
-    color: black;
-    border-radius: 5px;
- }
-
- nav a:nth-child(2):hover{
-    background-color: #1e88e5;
-    color: black;
-        border-radius: 5px;
-
- }
-
- nav a:nth-child(3):hover{
-    background-color: #1e88e5;
-    color: black;
-        border-radius: 5px;
-
- }
-
  .hero-content {
   flex-grow: 1; 
   display: flex;
@@ -250,4 +216,41 @@ nav a:first-child:hover{
   width: 100%;
   border-radius: 10px;
 }
+
+footer {
+  background-color: #272e6b; 
+  color: white;
+  padding: 50px 10% 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #888;
+  font-size: 13px;
+}
+
 
