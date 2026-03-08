@@ -1,0 +1,149 @@
+/* STYLE GENERAL */
+
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background-color:#f5f7fb;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-image:url("/images/campus.png");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding:15px 40px;
+}
+
+.logo{
+    height:45px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
+}
+
+.nav-links a:hover{
+    color:#4da6ff;
+}
+
+
+/* SECTION CONTACT */
+
+.contact-section{
+    max-width:900px;
+    margin:40px auto;
+    padding:40px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-section h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+
+/* LISTES */
+
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+
+/* FORMULAIRE */
+
+.formulaire{
+    margin-top:30px;
+    background:#f9f9f9;
+    padding:25px;
+    border-radius:12px;
+    border:1px solid #e0e0e0;
+    max-width:500px;
+}
+
+
+/* CHAMPS */
+
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:6px;
+    font-weight:bold;
+}
+
+.form-group input,
+.form-group textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:14px;
+}
+
+
+/* BOUTON */
+
+button{
+    background-color:#0066ff;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:#004ecc;
+}
+
+
+/* TITRES */
+
+h2{
+    margin-top:40px;
+    color:#0b1c3d;
+}
+
+h3{
+    margin-top:20px;
+}
+
+
+.faq-question{
+width:100%;
+text-align:left;
+padding:12px;
+background:#f1f1f1;
+border:none;
+border-radius:6px;
+cursor:pointer;
+margin-top:10px;
+font-weight:bold;
+color:black;
+}
+
+.faq-answer{
+display:none;
+padding:10px;
+background:#fafafa;
+border-left:3px solid #0066ff;
+margin-top:5px;
+}
