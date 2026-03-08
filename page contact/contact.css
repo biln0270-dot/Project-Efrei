@@ -7,36 +7,69 @@ body{
 }
 
 
-/* NAVBAR */
+.hero-section {
 
-.navbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background-image:url("/images/campus.png");
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-    padding:15px 40px;
-}
-
-.logo{
-    height:45px;
-}
-
-.nav-links a{
-    color:white;
-    text-decoration:none;
-    margin-left:25px;
-    font-weight:bold;
-}
-
-.nav-links a:hover{
-    color:#4da6ff;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/contactimage.jpg");
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
 }
 
 
-/* SECTION CONTACT */
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.logo {
+  width: 180px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white; 
+  margin-left: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #1e88e5; 
+}
+
+.hero-content {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  padding-left: 10%; 
+  color: white;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 4rem; 
+  margin-top: 0;
+  margin-bottom: 40px;
+  max-width: 800px; 
+  line-height: 1.1;
+}
 
 .contact-section{
     max-width:900px;
@@ -63,9 +96,6 @@ li{
     margin-bottom:8px;
 }
 
-
-/* FORMULAIRE */
-
 .formulaire{
     margin-top:30px;
     background:#f9f9f9;
@@ -74,9 +104,6 @@ li{
     border:1px solid #e0e0e0;
     max-width:500px;
 }
-
-
-/* CHAMPS */
 
 .form-group{
     margin-bottom:20px;
@@ -98,8 +125,6 @@ li{
 }
 
 
-/* BOUTON */
-
 button{
     background-color:#0066ff;
     color:white;
@@ -114,8 +139,6 @@ button:hover{
     background-color:#004ecc;
 }
 
-
-/* TITRES */
 
 h2{
     margin-top:40px;
@@ -146,4 +169,40 @@ padding:10px;
 background:#fafafa;
 border-left:3px solid #0066ff;
 margin-top:5px;
+}
+
+footer {
+  background-color: #272e6b; 
+  color: white;
+  padding: 50px 10% 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #888;
+  font-size: 13px;
 }
