@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Accueil EFREI</title>
   <link rel="stylesheet" href="estyle2.css">
+  
 </head>
 <body>
 <header class="hero-section">
@@ -67,9 +68,30 @@
       </p>
       <a href="../page cours et formations/coursetformations.html" class="btn-lire-plus">Découvrir nos formations</a>
     </div>
-    <div class="presentation-image">
-      <img src="../images/etudiants.png" alt="Étudiants EFREI sur le campus">
+    <div class="image-carousel">
+    
+    <div class="carousel-slide active fade">
+      <img src="../images/etudiantsefreienclasse.jpg" alt="Étudiants EFREI sur le campus">
     </div>
+    
+    <div class="carousel-slide fade">
+      <img src="../images/efrei-batiment.jpg" alt="Campus EFREI">
+    </div>
+    
+    <div class="carousel-slide fade">
+      <img src="../images/Grandrex.jpg" alt="Cours de code">
+    </div>
+
+    <a class="carousel-prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="carousel-next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="carousel-dots">
+      <span class="dot active" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    
+  </div>
   </section>
 
   <section class="formations-preview">
@@ -155,5 +177,6 @@
       <p>&copy; 2026 Tous droits réservés.</p>
     </div>
   </footer>
+  <script src="ejava.js"></script>
 </body>
 </html>
