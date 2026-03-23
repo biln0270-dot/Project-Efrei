@@ -9,17 +9,8 @@
 
   <header class="hero-section">
     
-    <nav class="navbar">
-      <div class="logo-container">
-        <img src="/images/efr logo.png" alt="EFREI Paris" class="logo">
-      </div>
-      <div class="nav-links">
-       <a href="/Project-Efrei-main/page_accueil/">Accueil</a>
-<a href="/Project-Efrei-main/page_cours_formations/coursetformations.php">Cours et formations</a>
-<a href="/Project-Efrei-main/page_enseignants/enseignant.php">Équipe enseignante</a>
-<a href="/Project-Efrei-main/page_contact/contact.php">Nous contacter</a>
-      </div>
-    </nav>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/Project-Efrei-main/includes/navbar.php'; ?>
+
 
     <div class="hero-content">
       <p class="subtitle">Notre Équipe Pédagogique</p>
@@ -85,12 +76,7 @@
         <p>Projet de programmation Web.</p>
       </div>
       
-      <nav class="footer-nav">
-        <a href="../page acceuil/eacceuil.html">Accueil</a>
-        <a href="../page cours et formations/coursetformations.html">Cours</a>
-        <a href="../page nos enseignats/enseignant.html">Équipe</a>
-        <a href="../page contact/contact.html">Contactez-nous</a>
-      </nav>
+     <?php include $_SERVER['DOCUMENT_ROOT'] . '/Project-Efrei-main/includes/footer.php'; ?>
     </div>
     
     <div class="footer-bottom">

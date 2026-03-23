@@ -9,24 +9,15 @@
 <body>
 <header class="hero-section">
     
-    <nav class="navbar">
-      <div class="logo-container">
-        <img src="/images/efr logo.png" alt="EFREI Paris" class="logo">
-      </div>
-      <div class="nav-links">
-       <a href="/Project-Efrei-main/page_accueil/">Accueil</a>
-<a href="/Project-Efrei-main/page_cours_formations/coursetformations.php">Cours et formations</a>
-<a href="/Project-Efrei-main/page_enseignants/enseignant.php">Équipe enseignante</a>
-<a href="/Project-Efrei-main/page_contact/contact.php">Nous contacter</a>
-      </div>
-    </nav>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/Project-Efrei-main/includes/navbar.php'; ?>
+
 
     <div class="hero-content">
       <p class="subtitle">Département d'Informatique</p>
       <h1>L'école d'ingénieurs pour<br>le monde de demain</h1>
       
       <div class="hero-actions">
-        <a href="../page cours et formations/coursetformations.html" class="btn btn-primary">Je trouve ma formation ➔</a>
+        <a href="/Project-Efrei-main/page_cours_formations/coursetformations.php" class="btn btn-primary">Je trouve ma formation ➔</a>
         <a href="#events" class="btn btn-secondary">Prochains événements ➔</a>
       </div>
     </div>
@@ -165,12 +156,7 @@
         <p>Projet de programmation Web.</p>
       </div>
       
-      <nav class="footer-nav">
-        <a href="eacceuil.html">Accueil</a>
-        <a href="../page cours et formations/coursetformations.html">Cours</a>
-        <a href="../page nos enseignats/enseignant.html">Équipe</a>
-        <a href="../page contact/contact.html">Contactez-nous</a>
-      </nav>
+     <?php include $_SERVER['DOCUMENT_ROOT'] . '/Project-Efrei-main/includes/footer.php'; ?>
     </div>
     
     <div class="footer-bottom">
