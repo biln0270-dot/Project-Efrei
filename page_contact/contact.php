@@ -3,6 +3,7 @@
 
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact - EFREI</title>
 <link rel="stylesheet" href="contact.css">
 </head>
@@ -11,8 +12,7 @@
 
 <header class="hero-section">
     
-   <?php include $_SERVER['DOCUMENT_ROOT'].'/Project-Efrei-main/includes/navbar.php'; ?>
-
+<?php include "../includes/navbar.php"; ?>
 
     <div class="hero-content">
       <p class="subtitle">Contactez-nous</p>
@@ -187,20 +187,7 @@ LinkedIn EFREI
 
 <script src="contact.js"></script>
 
-<footer>
-    <div class="footer-content">
-      <div class="footer-info">
-        <h3>EFREI - Département Informatique</h3>
-        <p>Projet de programmation Web.</p>
-      </div>
-      
-     <?php include $_SERVER['DOCUMENT_ROOT'] . '/Project-Efrei-main/includes/footer.php'; ?>
-    </div>
-    
-    <div class="footer-bottom">
-      <p>&copy; 2026 Tous droits réservés.</p>
-    </div>
-  </footer>
+<?php include "../includes/footer.php"; ?>
 
 </body>
 </html>

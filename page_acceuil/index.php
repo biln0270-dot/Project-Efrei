@@ -2,15 +2,16 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accueil EFREI</title>
   <link rel="stylesheet" href="estyle2.css">
   
 </head>
 <body>
+  <?php include "../includes/navbar.php"; ?>
+
 <header class="hero-section">
     
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/Project-Efrei-main/includes/navbar.php'; ?>
-
 
     <div class="hero-content">
       <p class="subtitle">Département d'Informatique</p>
@@ -148,6 +149,7 @@
       </div>
     </div>
   </section>
+<?php include "../includes/footer.php"; ?>
 
   <footer>
     <div class="footer-content">
@@ -156,16 +158,11 @@
         <p>Projet de programmation Web.</p>
       </div>
       
-     <?php include $_SERVER['DOCUMENT_ROOT'] . '/Project-Efrei-main/includes/footer.php'; ?>
     </div>
     
     <div class="footer-bottom">
       <p>&copy; 2026 Tous droits réservés.</p>
     </div>
   </footer>
-  <script src="ejava.js"></script>
 </body>
 </html>
-<?php
-header("Location: page accueil/eacceuil.php");
-exit;

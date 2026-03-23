@@ -6,19 +6,10 @@
   <link rel="stylesheet" href="couretformations.css">
 </head>
 <body>
+  <?php include "../includes/navbar.php"; ?>
+
 <header class="hero-section">
     
-    <nav class="navbar">
-      <div class="logo-container">
-        <img src="/images/efr logo.png" alt="EFREI Paris" class="logo">
-      </div>
-      <div class="nav-links">
-        <a href="../page acceuil/eacceuil.html">Accueil</a>
-        <a href="../page cours et formations/coursetformations.html">Cours et formations</a>
-        <a href="../page nos enseignats/enseignant.html">Équipe enseignante</a>
-        <a href="../page contact/contact.html">Nous contactez</a>
-      </div>
-    </nav>
 
     <div class="hero-content">
       <p class="subtitle">Cours & Formation</p>
@@ -105,25 +96,8 @@
 </section>
 
 
- <footer>
-    <div class="footer-content">
-      <div class="footer-info">
-        <h3>EFREI - Département Informatique</h3>
-        <p>Projet de programmation Web.</p>
-      </div>
-      
-      <nav class="footer-nav">
-        <a href="../page acceuil/eacceuil.html">Accueil</a>
-        <a href="../page cours et formations/coursetformations.html">Cours</a>
-        <a href="../page nos enseignats/enseignant.html">Équipe</a>
-        <a href="../page contact/contact.html">Contactez-nous</a>
-      </nav>
-    </div>
-    
-    <div class="footer-bottom">
-      <p>&copy; 2026 Tous droits réservés.</p>
-    </div>
-  </footer>
+ <?php include "../includes/footer.php"; ?>
+
 
 </body>
 </html>
