@@ -13,7 +13,7 @@
       <div class="logo-container">
         <img src="/images/efr logo.png" alt="EFREI Paris" class="logo">
       </div>
-      <div class="nav-links">
+      <div class="nav-links">²
         <a href="eacceuil.html">Accueil</a>
         <a href="../page cours et formations/coursetformations.html">Cours et formations</a>
         <a href="../page nos enseignats/enseignant.html">Équipe enseignante</a>
