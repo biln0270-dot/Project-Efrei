@@ -58,7 +58,7 @@
         Grâce à une pédagogie axée sur la pratique et les projets, nous préparons 
         nos étudiants à relever les défis technologiques de demain.
       </p>
-      <a href="../page cours et formations/coursetformations.html" class="btn-lire-plus">Découvrir nos formations</a>
+      <a href="../page_cours_formations/coursetformations.php" class="btn-lire-plus">Découvrir nos formations</a>
     </div>
     <div class="image-carousel">
     
@@ -108,7 +108,7 @@
     </div>
     
     <div class="center-btn">
-      <a href="../page cours et formations/coursetformations.html" class="btn-primary-2">Voir le programme complet</a>
+      <a href="../page_cours_formations/coursetformations.php" class="btn-primary-2">Voir le programme complet</a>
     </div>
   </section>
 
