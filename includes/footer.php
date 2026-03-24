@@ -8,10 +8,10 @@
 </div>
 
 <nav class="footer-nav">
-<a href="/Project-Efrei-main/page_acceuil/index.php">Accueil</a>
-<a href="/Project-Efrei-main/page_cours_formations/coursetformations.php">Cours</a>
-<a href="/Project-Efrei-main/page_enseignants/enseignant.php">Équipe</a>
-<a href="/Project-Efrei-main/page_contact/contact.php">Contact</a>
+<a href="/Project-Efrei/page_acceuil/index.php">Accueil</a>
+<a href="/Project-Efrei/page_cours_formations/coursetformations.php">Cours</a>
+<a href="/Project-Efrei/page_enseignants/enseignant.php">Équipe</a>
+<a href="/Project-Efrei/page_contact/contact.php">Contact</a>
 </nav>
 
 </div>

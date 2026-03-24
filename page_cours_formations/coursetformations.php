@@ -6,10 +6,10 @@
   <link rel="stylesheet" href="couretformations.css">
 </head>
 <body>
-  <?php include "../includes/navbar.php"; ?>
+ 
 
 <header class="hero-section">
-    
+     <?php include "../includes/navbar.php"; ?>
 
     <div class="hero-content">
       <p class="subtitle">Cours & Formation</p>

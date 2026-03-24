@@ -38,7 +38,7 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
-// Optionnel : Ça fait défiler l'image automatiquement toutes les 4 secondes !
+//  Çeci fait défiler l'image automatiquement toutes les 4 secondes 
 setInterval(function() {
   plusSlides(1);
 }, 4000);

@@ -2,23 +2,23 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Accueil EFREI</title>
   <link rel="stylesheet" href="estyle2.css">
   
 </head>
 <body>
-  <?php include "../includes/navbar.php"; ?>
+  
 
 <header class="hero-section">
-    
+    <?php include "../includes/navbar.php"; ?>
 
     <div class="hero-content">
       <p class="subtitle">Département d'Informatique</p>
       <h1>L'école d'ingénieurs pour<br>le monde de demain</h1>
       
       <div class="hero-actions">
-        <a href="/Project-Efrei-main/page_cours_formations/coursetformations.php" class="btn btn-primary">Je trouve ma formation ➔</a>
+        <a href="../page_cours_formations/coursetformations.php" class="btn btn-primary">Je trouve ma formation ➔</a>
         <a href="#events" class="btn btn-secondary">Prochains événements ➔</a>
       </div>
     </div>
@@ -150,19 +150,7 @@
     </div>
   </section>
 <?php include "../includes/footer.php"; ?>
+<script src="ejava.js"></script>
 
-  <footer>
-    <div class="footer-content">
-      <div class="footer-info">
-        <h3>EFREI - Département Informatique</h3>
-        <p>Projet de programmation Web.</p>
-      </div>
-      
-    </div>
-    
-    <div class="footer-bottom">
-      <p>&copy; 2026 Tous droits réservés.</p>
-    </div>
-  </footer>
 </body>
 </html>
